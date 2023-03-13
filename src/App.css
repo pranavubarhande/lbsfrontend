@@ -3,6 +3,64 @@
   margin: 0
 }
 
+
+
+
+
+
+/* button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+} */
+
+/* button:hover {
+  background-color: #594545; 
+  color: white;
+} */
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+
+}
+
+
+
 .content-center {
   height: 100vh;
   display: flex;
@@ -54,6 +112,44 @@
   animation-delay: 0.3s
 }
 
+.glow {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #9E7676;
+  text-align: center;
+  /* -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate; */
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #ebe8e8, 0 0 4px #bbb9ba, 0 0 5px #898889, 0 0 6px #7a7979, 0 0 7px #828081;
+  }
+  to {
+    text-shadow: 0 0 1px #fff, 0 0 2px #b1afb0, 0 0 3px #c0bebf, 0 0 4px #dddcdd, 0 0 5px #d5d4d5, 0 0 6px #eeeded, 0 0 7px #faf6f8;
+  }
+}
+
+.glow2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #9E7676;
+  text-align: center;
+  /* -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate; */
+}
+
+@keyframes glow2 {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #ebe8e8, 0 0 11px #bbb9ba, 0 0 15px #898889, 0 0 19px #7a7979, 0 0 23px #828081;
+  }
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 5px #b1afb0, 0 0 7px #c0bebf, 0 0 11px #dddcdd, 0 0 15px #d5d4d5, 0 0 19px #eeeded, 0 0 23px #faf6f8;
+  }
+}
+
 @keyframes pulse {
   0% {
       transform: scale(0.5);
@@ -70,3 +166,4 @@
       opacity: 0
   }
 }
+
